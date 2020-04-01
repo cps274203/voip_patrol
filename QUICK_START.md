@@ -39,3 +39,6 @@ docker logs voip_patrol
 XML_CONF[basic_server.xml] RESULT FILE[result.json] PORT[5060]
 Running /git/voip_patrol/voip_patrol --port 5060 --conf /xml/basic_server.xml --output /output/result.json
 ```
+
+### default scenario 
+https://github.com/jchavanton/voip_patrol/blob/quick_start/docker/xml/basic_server.xml
