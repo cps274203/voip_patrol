@@ -1,10 +1,12 @@
 ## Quick start with docker
 
+
+### cloning voip_patrol (only needed to get the shell scripts or build your own image)
 ```
 git clone https://github.com/jchavanton/voip_patrol.git
 ```
 
-### example: building docker image
+### example: building docker image (not needed, you can pull)
 ```
 cd voip_patrol/docker
 ./build_image.sh
@@ -20,6 +22,14 @@ docker pull jchavanton/voip_patrol:latest
 cd voip_patrol/docker
 ./run.sh
 ```
+#### or use the following
+```bash
+#!/bin/sh                                                                                                                                                                                                   
+IMAGE=voip_patrol:latest
+CONTAINER_NAME=voip_patrol
+docker run -d --net=host --name=${CONTAINER_NAME} ${IMAGE}
+```
+
 
 ### done voip_patrol should running as a server on 5060 !
 ```
