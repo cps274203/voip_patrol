@@ -1,12 +1,14 @@
 ## Quick start with docker
 
 
-### cloning voip_patrol (only needed to get the shell scripts or build your own image)
+### cloning voip_patrol 
+(only needed to get the shell scripts to build your own image)
 ```
 git clone https://github.com/jchavanton/voip_patrol.git
 ```
 
-### example: building docker image (not needed, you can pull)
+### example: building docker image
+(optionnal, you can pull unless you want to build your own image)
 ```
 cd voip_patrol/docker
 ./build_image.sh
